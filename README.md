@@ -5,5 +5,5 @@ Web interface used to display application data from IRE TAG software by http://w
 
 Copyright Lorenzo Braghetto http://lorenzobraghetto.com monossido@lorenzobraghetto.com - IRE TAG Web Gui is released under GPL license
 
-![Example](http://monossido.github.com/IRE-TAG-Web-GUI/img/examples.png)
+![Example](http://monossido.ath.cx/lasertag/stats/img/examples.png)
 
