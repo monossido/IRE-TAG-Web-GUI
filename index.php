@@ -42,7 +42,7 @@ try
 		else if($nameTable['name']=="stats2")
 			echo "(falsata perchè fucili di squadre diverse sono stati mischiati...kill, teamkill e colpi sparati corretti a mano)";
 		echo "<table border=1>";
-		echo "<tr><td>Nick</td><td>Colpi sparati</td><td>Colpi a segno</td><td>Kill</td><td>Colpi a segno su amici</td><td>Team Kill</td><td>Precisione %</td><td>Respawn</td><td>Morti</td><td>Partite giocate</td><td>Punti Esperienza</td></tr>";
+		echo "<tr><th>Nick</th><th>Colpi sparati</th><th>Colpi a segno</th><th>Kill</th><th>Colpi a segno su amici</th><th>Team Kill</th><th>Precisione %</th><th>Respawn</th><th>Morti</th><th>Partite giocate</th><th>Punti Esperienza</th></tr>";
 		foreach($result as $data)
 		{
 			if(!in_array($data['giocatore'], $giocatori))
@@ -67,7 +67,7 @@ try
 	echo "Stats totali (di partite falsate)";
 
 	echo "<table border=1>";
-	echo "<tr><td>Nick</td><td>Colpi sparati</td><td>Colpi a segno</td><td>Kill</td><td>Colpi a segno su amici</td><td>Team Kill</td><td>Precisione %</td><td>Respawn</td><td>Morti</td><td>Partite giocate</td><td>Punti Esperienza</td></tr>";
+	echo "<tr><th>Nick</th><th>Colpi sparati</th><th>Colpi a segno</th><th>Kill</th><th>Colpi a segno su amici</th><th>Team Kill</th><th>Precisione %</th><th>Respawn</th><th>Morti</th><th>Partite giocate</th><th>Punti Esperienza</th></tr>";
 	for($i=0;$i<count($giocatori);$i++)
 	{
 		echo "<tr><td>".$giocatori[$i]."</td>";
