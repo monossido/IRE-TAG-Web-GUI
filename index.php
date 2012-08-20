@@ -37,10 +37,6 @@ try
 		$i++;
 		$result = $sq->query('SELECT * FROM '.$nameTable['name']);
 		echo "Partita ".$i;
-		if($nameTable['name']=="stats1")
-			echo "(falsata perchè fucile di ghebe e di karim non esistono)";
-		else if($nameTable['name']=="stats2")
-			echo "(falsata perchè fucili di squadre diverse sono stati mischiati...kill, teamkill e colpi sparati corretti a mano)";
 		echo "<table border=1>";
 		echo "<tr><th>Nick</th><th>Colpi sparati</th><th>Colpi a segno</th><th>Kill</th><th>Colpi a segno su amici</th><th>Team Kill</th><th>Precisione %</th><th>Respawn</th><th>Morti</th><th>Partite giocate</th><th>Punti Esperienza</th></tr>";
 		foreach($result as $data)
