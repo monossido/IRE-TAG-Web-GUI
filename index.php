@@ -72,7 +72,6 @@ try
 		$ne = 0;
 		$ca = 0;
 		$ae = 0;
-		$prec = 0;
 		$rs = 0;
 		$ve = 0;
 		$pg = 0;
@@ -92,13 +91,13 @@ try
 				$ne = $ne + $data[0]['ne'];
 				$ca = $ca + $data[0]['ca'];
 				$ae = $ae + $data[0]['ae'];
-				$prec = $prec + $data[0]['prec'];
 				$rs = $rs + $data[0]['rs'];
 				$ve = $ve + $data[0]['ve'];
 				$pg = $pg + $data[0]['pg'];
 				$xp = $xp + $data[0]['xp'];
 			}
 		}
+		$prec = floor($cn * 100 / $cs);
 		echo "<td>".$cs."</td>";
 		echo "<td>".$cn."</td>";
 		echo "<td>".$ne."</td>";
